@@ -6,6 +6,9 @@
     <title>Ally — Communication you can trust</title>
     <meta name="description" content="Ally is a privacy-first, open-source communication platform. End-to-end encrypted messaging, voice channels, and community spaces — built for people, not advertisers.">
     <meta name="theme-color" content="#0a0a0f">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="canonical" href="https://allyapp.cc">
 
     <!-- Open Graph -->
@@ -52,7 +55,9 @@
             border-bottom: 1px solid rgba(255,255,255,0.06);
         }
         nav .container { display: flex; align-items: center; justify-content: space-between; }
+        .nav-logo-img { width: 28px; height: 28px; border-radius: 6px; margin-right: 8px; }
         .nav-logo {
+            display: flex; align-items: center;
             font-size: 20px; font-weight: 800; letter-spacing: -0.02em;
             background: linear-gradient(135deg, #818cf8, #6366f1);
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
@@ -357,7 +362,7 @@
 <!-- NAV -->
 <nav>
     <div class="container">
-        <a href="/" class="nav-logo" aria-label="Ally home">Ally</a>
+        <a href="/" class="nav-logo" aria-label="Ally home"><img src="/icon-192.png" alt="Ally" class="nav-logo-img">Ally</a>
         <button class="mobile-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
             <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
@@ -620,7 +625,7 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-left">
-                <div class="foot-logo">Ally</div>
+                <div class="foot-logo"><img src="/icon-192.png" alt="" style="width:20px;height:20px;border-radius:4px;display:inline-block;vertical-align:middle;margin-right:6px;">Ally</div>
                 <div>&copy; 2026 Ally. All rights reserved.</div>
             </div>
             <div class="footer-links">
