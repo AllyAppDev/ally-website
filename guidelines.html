@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community Guidelines — Ally</title>
+<meta name="description" content="Ally's Community Guidelines. The values and standards that make Ally a great place for everyone.">
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://allyapp.cc/guidelines">
+<meta property="og:title" content="Community Guidelines — Ally">
+<meta property="og:description" content="The values and standards that make Ally a great place to chat, connect, and build community.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://allyapp.cc/guidelines">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:#0a0a0f;color:#c4c4d4;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button,input{font-family:inherit}
+:root{
+  --v:#7C6DFA;--vl:#a09bfb;--vd:#5a4dd4;--vg:rgba(124,109,250,.3);
+  --bg:#0a0a0f;--s1:#13131c;--s2:#1a1a26;--s3:#21212f;
+  --b:rgba(255,255,255,.07);--bv:rgba(124,109,250,.22);
+  --tp:#f0f0f8;--ts:#9292b0;--tm:#52526a;
+  --green:#22c55e;--red:#f43f5e
+}
+.ctr{max-width:860px;margin:0 auto;padding:0 28px}
+.grad{background:linear-gradient(135deg,#b8b4ff 0%,#7C6DFA 45%,#d09aff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+#nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:13px 0;background:rgba(10,10,15,.85);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-bottom:1px solid var(--b)}
+#nav .nctr{max-width:1140px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.nav-wm{font-family:'Plus Jakarta Sans',sans-serif;font-size:21px;font-weight:800;color:var(--tp);letter-spacing:-.04em}
+.nav-links{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.nav-links a{font-size:13px;font-weight:500;color:var(--ts);padding:6px 12px;border-radius:7px;transition:color .2s,background .2s;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:var(--tp);background:rgba(255,255,255,.05)}
+.nav-links a.active{color:var(--vl)}
+.nav-home{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid var(--b);color:var(--tp);font-size:13px;font-weight:500;transition:background .2s}
+.nav-home:hover{background:rgba(255,255,255,.09)}
+.legal-hero{padding:120px 0 60px;position:relative;overflow:hidden}
+.legal-hero::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:700px;height:500px;background:radial-gradient(ellipse,rgba(124,109,250,.1) 0%,transparent 70%);pointer-events:none;z-index:0}
+.legal-hero-inner{position:relative;z-index:1}
+.legal-badge{display:inline-flex;align-items:center;gap:8px;padding:5px 14px 5px 9px;border-radius:100px;background:rgba(124,109,250,.1);border:1px solid var(--bv);font-size:12px;font-weight:600;color:var(--vl);margin-bottom:20px}
+.legal-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--vl)}
+.legal-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(32px,4vw,52px);font-weight:800;letter-spacing:-.04em;color:var(--tp);line-height:1.08;margin-bottom:14px}
+.legal-hero-meta{font-size:14px;color:var(--tm);display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.legal-hero-meta span{display:flex;align-items:center;gap:5px}
+.legal-hero p.lead{font-size:17px;color:var(--ts);max-width:660px;line-height:1.65;margin-top:14px}
+.legal-content{padding:16px 0 80px}
+.legal-section{padding:36px 0;border-bottom:1px solid var(--b)}
+.legal-section:last-child{border-bottom:none}
+.legal-section h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:800;color:var(--tp);letter-spacing:-.025em;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.legal-section h2 .sec-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:7px;background:rgba(124,109,250,.12);color:var(--vl);font-size:12px;font-weight:700;flex-shrink:0}
+.legal-section h3{font-size:16px;font-weight:600;color:var(--tp);margin:20px 0 8px}
+.legal-section p{font-size:15px;color:var(--ts);line-height:1.72;margin-bottom:12px}
+.legal-section p:last-child{margin-bottom:0}
+.legal-section ul,.legal-section ol{padding-left:20px;display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.legal-section ul li,.legal-section ol li{font-size:15px;color:var(--ts);line-height:1.6}
+.legal-section ul li::marker{color:var(--vl)}
+.highlight-box{background:rgba(124,109,250,.07);border:1px solid var(--bv);border-radius:12px;padding:20px 24px;margin:18px 0}
+.highlight-box p{color:var(--tp)!important;font-weight:500;margin:0}
+.good-box{background:rgba(34,197,94,.05);border:1px solid rgba(34,197,94,.18);border-radius:12px;padding:20px 24px;margin:18px 0}
+.good-box p{color:#86efac!important;font-weight:500;margin:0}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}
+.value-card{padding:24px 20px;border-radius:14px;background:var(--s1);border:1px solid var(--b);text-align:center}
+.value-card .v-icon{font-size:28px;margin-bottom:12px}
+.value-card h4{font-size:15px;font-weight:700;color:var(--tp);margin-bottom:6px;font-family:'Plus Jakarta Sans',sans-serif}
+.value-card p{font-size:13px;color:var(--ts);line-height:1.55;margin:0}
+.guideline-item{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:flex-start}
+.guideline-item:last-child{border-bottom:none}
+.gi-icon{width:40px;height:40px;border-radius:10px;background:rgba(124,109,250,.1);border:1px solid var(--bv);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.gi-body h4{font-size:15px;font-weight:600;color:var(--tp);margin-bottom:5px}
+.gi-body p{font-size:14px;color:var(--ts);line-height:1.58;margin:0}
+.cw-types{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.cw-tag{padding:6px 14px;border-radius:7px;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.18);color:#fbbf24;font-size:13px;font-weight:500}
+footer{background:var(--s1);border-top:1px solid var(--b);padding:48px 0 32px}
+.foot-ctr{max-width:1140px;margin:0 auto;padding:0 28px}
+.foot-legal-links{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.foot-legal-links a{font-size:13px;color:var(--tm);padding:6px 14px;border-radius:7px;border:1px solid var(--b);background:rgba(255,255,255,.02);transition:color .2s,border-color .2s}
+.foot-legal-links a:hover{color:var(--ts);border-color:rgba(255,255,255,.12)}
+.foot-legal-links a.current{color:var(--vl);border-color:var(--bv);background:rgba(124,109,250,.07)}
+.foot-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:20px;border-top:1px solid var(--b)}
+.foot-copy{font-size:13px;color:var(--tm)}
+.foot-brand-link{display:flex;align-items:center;gap:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:800;color:var(--tp);letter-spacing:-.03em}
+@media(max-width:640px){
+.nav-links{display:none}
+.legal-hero{padding:100px 0 48px}
+.legal-section h2{font-size:19px}
+.values-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+.values-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+<div class="nctr">
+  <a href="/" class="nav-brand">
+    <svg viewBox="0 0 36 36" fill="none" width="30" height="30" aria-hidden="true"><rect width="36" height="36" rx="10" fill="#7C6DFA"/><path d="M18 6L28 28H22.5L18 17.5L13.5 28H8L18 6Z" fill="white" fill-opacity="0.95"/><path d="M12 23H24" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/></svg>
+    <span class="nav-wm">Ally</span>
+  </a>
+  <div class="nav-links">
+    <a href="/terms">Terms</a>
+    <a href="/privacy">Privacy</a>
+    <a href="/aup">Acceptable Use</a>
+    <a href="/guidelines" class="active">Guidelines</a>
+    <a href="/dmca">DMCA</a>
+  </div>
+  <a href="/" class="nav-home">
+    <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Home
+  </a>
+</div>
+</nav>
+
+<section class="legal-hero">
+<div class="ctr">
+  <div class="legal-hero-inner">
+    <div class="legal-badge"><span class="legal-badge-dot"></span>Community</div>
+    <h1>Community <span class="grad">Guidelines</span></h1>
+    <div class="legal-hero-meta">
+      <span>
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Last updated: July 2026
+      </span>
+      <span>
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        ~8 min read
+      </span>
+    </div>
+    <p class="lead">These guidelines are about the kind of community we want to build together. They go beyond what's technically prohibited — they're about how we treat each other and what makes Ally genuinely great.</p>
+  </div>
+</div>
+</section>
+
+<div class="legal-content">
+<div class="ctr">
+
+  <!-- 1. OUR VALUES -->
+  <div class="legal-section">
+    <h2><span class="sec-num">1</span> Our Values</h2>
+    <p>Ally is built on three core values that shape everything from our product decisions to how we moderate the platform. These aren't marketing words — they're commitments we take seriously.</p>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="v-icon">🤝</div>
+        <h4>Respect</h4>
+        <p>Everyone deserves to feel welcome. We treat each other with basic dignity, even when we disagree.</p>
+      </div>
+      <div class="value-card">
+        <div class="v-icon">🔒</div>
+        <h4>Privacy</h4>
+        <p>We protect the privacy of every person on the platform — not just legally, but as a genuine value.</p>
+      </div>
+      <div class="value-card">
+        <div class="v-icon">🛡️</div>
+        <h4>Safety</h4>
+        <p>Ally should be safe for everyone — especially people in vulnerable groups or situations.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. BE KIND -->
+  <div class="legal-section">
+    <h2><span class="sec-num">2</span> Be Kind</h2>
+    <p>This one sounds obvious, but it makes a real difference. Ally is full of people from different backgrounds, cultures, and life experiences. What's normal in one community might be unusual in another — and that diversity is a strength.</p>
+    
+    <div class="guideline-item">
+      <div class="gi-icon">💬</div>
+      <div class="gi-body">
+        <h4>Disagree constructively</h4>
+        <p>Debate ideas, not people. It's completely fine to strongly disagree with someone — just focus on what they said, not who they are.</p>
+      </div>
+    </div>
+    <div class="guideline-item">
+      <div class="gi-icon">❤️</div>
+      <div class="gi-body">
+        <h4>Welcome newcomers</h4>
+        <p>Everyone's new somewhere. If someone asks a basic question or makes a beginner mistake, help them out instead of piling on.</p>
+      </div>
+    </div>
+    <div class="guideline-item">
+      <div class="gi-icon">🌍</div>
+      <div class="gi-body">
+        <h4>Be mindful of context</h4>
+        <p>Humor, sarcasm, and in-jokes that work in one group can land badly in another. Read the room, and be kind when pointing out misunderstandings.</p>
+      </div>
+    </div>
+    <div class="guideline-item">
+      <div class="gi-icon">🚫</div>
+      <div class="gi-body">
+        <h4>Don't harass or bully</h4>
+        <p>Targeted harassment — repeatedly going after someone, coordinating others to pile on, or making someone feel unsafe — is not allowed. This includes DMs.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. KEEP IT SAFE -->
+  <div class="legal-section">
+    <h2><span class="sec-num">3</span> Keep It Safe</h2>
+    <p>Safety means different things in different contexts — physical safety, emotional safety, and online safety all matter on Ally.</p>
+    
+    <div class="guideline-item">
+      <div class="gi-icon">🏥</div>
+      <div class="gi-body">
+        <h4>Take mental health seriously</h4>
+        <p>Don't trivialize self-harm or suicide. If someone shares that they're struggling, treat it with care. Resources like the 988 Suicide &amp; Crisis Lifeline (US) or Crisis Text Line exist for a reason — it's okay to share them.</p>
+      </div>
+    </div>
+    <div class="guideline-item">
+      <div class="gi-icon">🔞</div>
+      <div class="gi-body">
+        <h4>Age-appropriate content</h4>
+        <p>Adult content is allowed only in servers where the server admin has enabled it in age-gated channels. Never share adult content in spaces accessible to minors. Never share sexual content involving minors — this is a zero-tolerance rule.</p>
+      </div>
+    </div>
+    <div class="guideline-item">
+      <div class="gi-icon">💊</div>
+      <div class="gi-body">
+        <h4>No dangerous promotion</h4>
+        <p>Don't promote dangerous behaviors (self-harm methods, unsafe drug combinations) in ways that could encourage others to hurt themselves. Harm reduction information shared responsibly is different from promotion.</p>
+      </div>
+    </div>
+    <div class="guideline-item">
+      <div class="gi-icon">🎯</div>
+      <div class="gi-body">
+        <h4>No hate speech</h4>
+        <p>Content that dehumanizes people based on race, ethnicity, national origin, religion, gender identity, sexual orientation, disability, or other protected characteristics isn't allowed. Critique ideas; don't dehumanize people.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. RESPECT PRIVACY -->
+  <div class="legal-section">
+    <h2><span class="sec-num">4</span> Respect Privacy</h2>
+    <p>Privacy is core to who we are as a company, and it has to be core to who we are as a community.</p>
+    
+    <div class="guideline-item">
+      <div class="gi-icon">🔐</div>
+      <div class="gi-body">
+        <h4>Keep private things private</h4>
+        <p>If someone shares something in a private channel, DM, or closed server, it's understood to stay there. Don't screenshot and share conversations without consent.</p>
+      </div>
+    </div>
+    <div class="guideline-item">
+      <div class="gi-icon">📍</div>
+      <div class="gi-body">
+        <h4>Don't share others' personal information</h4>
+        <p>This includes real names, addresses, workplaces, phone numbers, and photos of someone who hasn't shared them publicly. Even information that's "technically" public can be weaponized — use judgment.</p>
+      </div>
+    </div>
+    <div class="guideline-item">
+      <div class="gi-icon">🤫</div>
+      <div class="gi-body">
+        <h4>Respect anonymity</h4>
+        <p>Some people participate under pseudonyms for very good reasons. Don't try to "reveal" who someone is unless they've offered that information themselves. Outing someone — whether identity, sexuality, or location — can cause real harm.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. SERVER RULES -->
+  <div class="legal-section">
+    <h2><span class="sec-num">5</span> Server Rules &amp; Admin Authority</h2>
+    <p>Ally servers (communities) are run by server administrators who create their own cultures and rules. Server admins have broad authority to shape their communities — including setting their own rules, restricting topics, and banning members — as long as they stay within Ally's platform policies.</p>
+    <p>As a user:</p>
+    <ul>
+      <li>Respect the rules of each server you join. Every server is different.</li>
+      <li>If you disagree with a server's rules, you're free to leave — and to appeal server bans through the server's own process or by contacting the admin.</li>
+      <li>Don't harass or attack server admins for doing their jobs. Moderation is a thankless task.</li>
+    </ul>
+    <p>As a server admin:</p>
+    <ul>
+      <li>You're responsible for ensuring your server complies with Ally's platform policies and AUP.</li>
+      <li>You have the tools to mute, kick, ban, and set permissions — use them fairly.</li>
+      <li>Severe violations you witness (CSAM, terrorism, etc.) should be reported to Ally Trust &amp; Safety even if you've already removed the member from your server.</li>
+    </ul>
+  </div>
+
+  <!-- 6. CONTENT WARNINGS -->
+  <div class="legal-section">
+    <h2><span class="sec-num">6</span> Content Warnings</h2>
+    <p>Content warnings (CWs) are a community courtesy. They let people choose whether to engage with content that might be difficult for them — without hiding the content or judging it as "bad."</p>
+    <p>We encourage (but don't require) using content warnings for:</p>
+    <div class="cw-types">
+      <span class="cw-tag">⚠️ Graphic violence</span>
+      <span class="cw-tag">⚠️ Disturbing news</span>
+      <span class="cw-tag">⚠️ Mental health topics</span>
+      <span class="cw-tag">⚠️ Flashing/strobing images</span>
+      <span class="cw-tag">⚠️ Spoilers</span>
+      <span class="cw-tag">⚠️ Political content</span>
+      <span class="cw-tag">⚠️ Food/diet topics</span>
+    </div>
+    <p>Server admins can make content warnings required in specific channels. Ally's spoiler functionality (wrapping text in spoiler tags) is a built-in way to implement this.</p>
+  </div>
+
+  <!-- 7. ENFORCEMENT -->
+  <div class="legal-section">
+    <h2><span class="sec-num">7</span> Enforcement &amp; Appeals</h2>
+    <p>Ally's Trust &amp; Safety team handles platform-level enforcement. Server admins handle enforcement within their own servers.</p>
+    <p>Platform enforcement follows a progressive model: most issues get a warning first. Serious violations skip straight to suspension or permanent ban. See our <a href="/aup" style="color:var(--vl)">Acceptable Use Policy</a> for the full enforcement framework.</p>
+    <div class="highlight-box">
+      <p>📬 Platform enforcement actions can be appealed within 30 days at <a href="mailto:appeals@allyapp.cc" style="color:var(--vl)">appeals@allyapp.cc</a>.</p>
+    </div>
+    <p>We try to be consistent and fair, but moderation is inherently human. If we get something wrong, tell us and we'll take another look.</p>
+  </div>
+
+  <!-- 8. HOW TO REPORT -->
+  <div class="legal-section">
+    <h2><span class="sec-num">8</span> How to Report</h2>
+    <p>Reporting is one of the most important contributions a community member can make. Here's how:</p>
+
+    <div class="guideline-item">
+      <div class="gi-icon">🖱️</div>
+      <div class="gi-body">
+        <h4>In-app report button</h4>
+        <p>Right-click or long-press any message, right-click any profile, or use the server context menu to find the Report option. It takes less than a minute.</p>
+      </div>
+    </div>
+    <div class="guideline-item">
+      <div class="gi-icon">📧</div>
+      <div class="gi-body">
+        <h4>Email for complex issues</h4>
+        <p>For issues that need more context, email <a href="mailto:safety@allyapp.cc" style="color:var(--vl)">safety@allyapp.cc</a>. Include usernames, server names, and timestamps if you have them.</p>
+      </div>
+    </div>
+    <div class="guideline-item">
+      <div class="gi-icon">🚨</div>
+      <div class="gi-body">
+        <h4>Urgent safety matters</h4>
+        <p>For active threats or CSAM, <a href="mailto:safety@allyapp.cc" style="color:var(--vl)">safety@allyapp.cc</a> is monitored around the clock. Don't hesitate.</p>
+      </div>
+    </div>
+    <p style="margin-top:20px">Your identity is protected when you report — we don't reveal reporters to the person being reported. Reports made in good faith, even if no violation is found, are always welcome.</p>
+  </div>
+
+</div>
+</div>
+
+<footer>
+<div class="foot-ctr">
+  <div class="foot-legal-links">
+    <a href="/terms">Terms of Service</a>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/aup">Acceptable Use</a>
+    <a href="/guidelines" class="current">Community Guidelines</a>
+    <a href="/dmca">DMCA / Copyright</a>
+  </div>
+  <div class="foot-bottom">
+    <a href="/" class="foot-brand-link">
+      <svg viewBox="0 0 36 36" fill="none" width="22" height="22"><rect width="36" height="36" rx="10" fill="#7C6DFA"/><path d="M18 6L28 28H22.5L18 17.5L13.5 28H8L18 6Z" fill="white" fill-opacity="0.95"/></svg>
+      Ally
+    </a>
+    <span class="foot-copy">&copy; 2026 Ally. Privacy-first &bull; Open source &bull; Zero ads</span>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Ally</title>
+<meta name="description" content="Ally's Privacy Policy. We collect less, protect more, and never sell your data. Read our plain-English commitment to your privacy.">
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://allyapp.cc/privacy">
+<meta property="og:title" content="Privacy Policy — Ally">
+<meta property="og:description" content="Ally's Privacy Policy — no data sales, no behavioral ads, no AI training on your private content.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://allyapp.cc/privacy">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:#0a0a0f;color:#c4c4d4;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button,input{font-family:inherit}
+:root{
+  --v:#7C6DFA;--vl:#a09bfb;--vd:#5a4dd4;--vg:rgba(124,109,250,.3);
+  --bg:#0a0a0f;--s1:#13131c;--s2:#1a1a26;--s3:#21212f;
+  --b:rgba(255,255,255,.07);--bv:rgba(124,109,250,.22);
+  --tp:#f0f0f8;--ts:#9292b0;--tm:#52526a;
+  --green:#22c55e;--red:#f43f5e
+}
+.ctr{max-width:860px;margin:0 auto;padding:0 28px}
+.grad{background:linear-gradient(135deg,#b8b4ff 0%,#7C6DFA 45%,#d09aff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+#nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:13px 0;background:rgba(10,10,15,.85);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-bottom:1px solid var(--b)}
+#nav .nctr{max-width:1140px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.nav-wm{font-family:'Plus Jakarta Sans',sans-serif;font-size:21px;font-weight:800;color:var(--tp);letter-spacing:-.04em}
+.nav-links{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.nav-links a{font-size:13px;font-weight:500;color:var(--ts);padding:6px 12px;border-radius:7px;transition:color .2s,background .2s;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:var(--tp);background:rgba(255,255,255,.05)}
+.nav-links a.active{color:var(--vl)}
+.nav-home{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid var(--b);color:var(--tp);font-size:13px;font-weight:500;transition:background .2s}
+.nav-home:hover{background:rgba(255,255,255,.09)}
+.legal-hero{padding:120px 0 60px;position:relative;overflow:hidden}
+.legal-hero::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:700px;height:500px;background:radial-gradient(ellipse,rgba(124,109,250,.1) 0%,transparent 70%);pointer-events:none;z-index:0}
+.legal-hero-inner{position:relative;z-index:1}
+.legal-badge{display:inline-flex;align-items:center;gap:8px;padding:5px 14px 5px 9px;border-radius:100px;background:rgba(124,109,250,.1);border:1px solid var(--bv);font-size:12px;font-weight:600;color:var(--vl);margin-bottom:20px}
+.legal-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--vl)}
+.legal-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(32px,4vw,52px);font-weight:800;letter-spacing:-.04em;color:var(--tp);line-height:1.08;margin-bottom:14px}
+.legal-hero-meta{font-size:14px;color:var(--tm);display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.legal-hero-meta span{display:flex;align-items:center;gap:5px}
+.legal-hero p.lead{font-size:17px;color:var(--ts);max-width:660px;line-height:1.65;margin-top:14px}
+.legal-content{padding:16px 0 80px}
+.legal-section{padding:36px 0;border-bottom:1px solid var(--b)}
+.legal-section:last-child{border-bottom:none}
+.legal-section h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:800;color:var(--tp);letter-spacing:-.025em;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.legal-section h2 .sec-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:7px;background:rgba(124,109,250,.12);color:var(--vl);font-size:12px;font-weight:700;flex-shrink:0}
+.legal-section h3{font-size:16px;font-weight:600;color:var(--tp);margin:20px 0 8px}
+.legal-section p{font-size:15px;color:var(--ts);line-height:1.72;margin-bottom:12px}
+.legal-section p:last-child{margin-bottom:0}
+.legal-section ul,.legal-section ol{padding-left:20px;display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.legal-section ul li,.legal-section ol li{font-size:15px;color:var(--ts);line-height:1.6}
+.legal-section ul li::marker{color:var(--vl)}
+.highlight-box{background:rgba(124,109,250,.07);border:1px solid var(--bv);border-radius:12px;padding:20px 24px;margin:18px 0}
+.highlight-box p{color:var(--tp)!important;font-weight:500;margin:0}
+.warn-box{background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.2);border-radius:12px;padding:20px 24px;margin:18px 0}
+.warn-box p{color:#fbbf24!important;margin:0}
+.good-box{background:rgba(34,197,94,.05);border:1px solid rgba(34,197,94,.18);border-radius:12px;padding:20px 24px;margin:18px 0}
+.good-box p{color:#86efac!important;margin:0}
+.no-box{background:rgba(244,63,94,.05);border:1px solid rgba(244,63,94,.16);border-radius:12px;padding:20px 24px;margin:18px 0}
+.no-box p{color:#fca5a5!important;margin:0}
+.commit-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0}
+.commit-card{padding:20px;border-radius:12px;background:var(--s1);border:1px solid var(--b)}
+.commit-card .ci-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:10px;font-size:15px}
+.commit-card h4{font-size:14px;font-weight:600;color:var(--tp);margin-bottom:5px}
+.commit-card p{font-size:13px;color:var(--ts);margin:0;line-height:1.5}
+.data-table{width:100%;border-collapse:collapse;margin:16px 0}
+.data-table th{text-align:left;font-size:12px;font-weight:700;color:var(--tm);text-transform:uppercase;letter-spacing:.08em;padding:10px 14px;border-bottom:1px solid var(--b)}
+.data-table td{font-size:14px;color:var(--ts);padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.04);vertical-align:top}
+.data-table td:first-child{color:var(--tp);font-weight:500;white-space:nowrap}
+.data-table tr:last-child td{border-bottom:none}
+footer{background:var(--s1);border-top:1px solid var(--b);padding:48px 0 32px}
+.foot-ctr{max-width:1140px;margin:0 auto;padding:0 28px}
+.foot-legal-links{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.foot-legal-links a{font-size:13px;color:var(--tm);padding:6px 14px;border-radius:7px;border:1px solid var(--b);background:rgba(255,255,255,.02);transition:color .2s,border-color .2s}
+.foot-legal-links a:hover{color:var(--ts);border-color:rgba(255,255,255,.12)}
+.foot-legal-links a.current{color:var(--vl);border-color:var(--bv);background:rgba(124,109,250,.07)}
+.foot-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:20px;border-top:1px solid var(--b)}
+.foot-copy{font-size:13px;color:var(--tm)}
+.foot-brand-link{display:flex;align-items:center;gap:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:800;color:var(--tp);letter-spacing:-.03em}
+@media(max-width:640px){
+.nav-links{display:none}
+.legal-hero{padding:100px 0 48px}
+.legal-section h2{font-size:19px}
+.commit-grid{grid-template-columns:1fr}
+.data-table{font-size:13px}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+<div class="nctr">
+  <a href="/" class="nav-brand">
+    <svg viewBox="0 0 36 36" fill="none" width="30" height="30" aria-hidden="true"><rect width="36" height="36" rx="10" fill="#7C6DFA"/><path d="M18 6L28 28H22.5L18 17.5L13.5 28H8L18 6Z" fill="white" fill-opacity="0.95"/><path d="M12 23H24" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/></svg>
+    <span class="nav-wm">Ally</span>
+  </a>
+  <div class="nav-links">
+    <a href="/terms">Terms</a>
+    <a href="/privacy" class="active">Privacy</a>
+    <a href="/aup">Acceptable Use</a>
+    <a href="/guidelines">Guidelines</a>
+    <a href="/dmca">DMCA</a>
+  </div>
+  <a href="/" class="nav-home">
+    <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Home
+  </a>
+</div>
+</nav>
+
+<section class="legal-hero">
+<div class="ctr">
+  <div class="legal-hero-inner">
+    <div class="legal-badge"><span class="legal-badge-dot"></span>Legal</div>
+    <h1>Privacy <span class="grad">Policy</span></h1>
+    <div class="legal-hero-meta">
+      <span>
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Last updated: July 2026
+      </span>
+      <span>
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        ~10 min read
+      </span>
+    </div>
+    <p class="lead">Privacy isn't a checkbox for us — it's the core of why Ally exists. This document explains exactly what we do (and don't do) with your data.</p>
+  </div>
+</div>
+</section>
+
+<div class="legal-content">
+<div class="ctr">
+
+  <!-- 1. COMMITMENT -->
+  <div class="legal-section">
+    <h2><span class="sec-num">1</span> Our Commitment</h2>
+    <p>Ally was built because too many platforms treat user data as a product. We take the opposite approach: your data is yours, and our job is to protect it.</p>
+    <div class="commit-grid">
+      <div class="commit-card">
+        <div class="ci-icon" style="background:rgba(34,197,94,.1)">🚫</div>
+        <h4>No data sales — ever</h4>
+        <p>We will never sell your personal data to third parties. Full stop.</p>
+      </div>
+      <div class="commit-card">
+        <div class="ci-icon" style="background:rgba(124,109,250,.12)">🔒</div>
+        <h4>No behavioral ads</h4>
+        <p>Ally has zero advertising. We don't profile you, track you, or monetize your behavior.</p>
+      </div>
+      <div class="commit-card">
+        <div class="ci-icon" style="background:rgba(245,158,11,.08)">🤖</div>
+        <h4>No AI training on your content</h4>
+        <p>Your messages and files are never used to train AI or machine learning models.</p>
+      </div>
+      <div class="commit-card">
+        <div class="ci-icon" style="background:rgba(6,182,212,.08)">🛡️</div>
+        <h4>Encryption by default</h4>
+        <p>All data is encrypted in transit. E2EE for DMs is implemented and active.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. WHAT WE COLLECT -->
+  <div class="legal-section">
+    <h2><span class="sec-num">2</span> What We Collect</h2>
+    <p>We collect only what we need to make Ally work. Here's a clear breakdown:</p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>What specifically</th>
+          <th>Why we need it</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Account data</td>
+          <td>Username, email address, hashed password, profile photo (optional)</td>
+          <td>To create and manage your account</td>
+        </tr>
+        <tr>
+          <td>Authentication</td>
+          <td>Login timestamps, IP addresses at login, device identifiers</td>
+          <td>Security — to detect unauthorized access and support 2FA</td>
+        </tr>
+        <tr>
+          <td>Message metadata</td>
+          <td>Timestamps, sender/recipient IDs, server/channel IDs, message IDs</td>
+          <td>To deliver messages and support features like read receipts</td>
+        </tr>
+        <tr>
+          <td>Message content</td>
+          <td>Text, images, files, reactions you post</td>
+          <td>To transmit and store your communications</td>
+        </tr>
+        <tr>
+          <td>Usage signals</td>
+          <td>Feature usage (e.g., "used voice channel"), error logs</td>
+          <td>To fix bugs and improve Ally — never tied to ad targeting</td>
+        </tr>
+        <tr>
+          <td>Payment data</td>
+          <td>Billing country, subscription status (payment card details held by processor, not us)</td>
+          <td>To process premium subscriptions</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Uploaded files</h3>
+    <p>When you upload images, we automatically strip EXIF metadata (GPS coordinates, device info, timestamps) before storing the file. This happens server-side and cannot be disabled — we believe it's the right default.</p>
+  </div>
+
+  <!-- 3. WHAT WE DON'T COLLECT -->
+  <div class="legal-section">
+    <h2><span class="sec-num">3</span> What We Don't Collect</h2>
+    <div class="no-box">
+      <p>❌ No tracking pixels or third-party analytics scripts on Ally services</p>
+    </div>
+    <div class="no-box">
+      <p>❌ No cross-site tracking or browsing history outside of Ally</p>
+    </div>
+    <div class="no-box">
+      <p>❌ No biometric data (face scans, fingerprints, voice identification)</p>
+    </div>
+    <div class="no-box">
+      <p>❌ No location data beyond what's implicit in an IP address at login</p>
+    </div>
+    <div class="no-box">
+      <p>❌ No data purchased from or shared with data brokers</p>
+    </div>
+    <p style="margin-top:16px">We do use our own basic server-side analytics (page views, API request counts, error rates) to run the platform. These are aggregate metrics, never linked to individual profiles, and never shared externally.</p>
+  </div>
+
+  <!-- 4. YOUR RIGHTS -->
+  <div class="legal-section" id="rights">
+    <h2><span class="sec-num">4</span> Your Rights</h2>
+    <p>You have meaningful control over your data. Here's what you can do — and how:</p>
+    <h3>Export your data</h3>
+    <p>You can request a full export of your data (account info, messages, uploaded files) from Account Settings → Privacy → Request Data Export. We'll prepare a machine-readable archive and notify you when it's ready, within 30 days.</p>
+    <h3>Delete your account</h3>
+    <p>You can delete your account at any time from Account Settings → Danger Zone. We'll delete your active data within <strong>30 days</strong> and purge all backup copies within <strong>90 days</strong>.</p>
+    <h3>Correct your information</h3>
+    <p>You can update most of your account information (username, email, profile) directly from your settings. For corrections we can't automate, email <a href="mailto:privacy@allyapp.cc" style="color:var(--vl)">privacy@allyapp.cc</a>.</p>
+    <h3>Opt out of non-essential data uses</h3>
+    <p>From your Privacy Settings, you can opt out of crash reporting and usage analytics. This doesn't affect core functionality.</p>
+    <h3>GDPR, CCPA, and other regulations</h3>
+    <p>If you're in the EU, UK, or California, you have additional rights (access, rectification, erasure, portability, objection). To exercise them, contact <a href="mailto:privacy@allyapp.cc" style="color:var(--vl)">privacy@allyapp.cc</a>. We respond within 30 days.</p>
+  </div>
+
+  <!-- 5. RETENTION -->
+  <div class="legal-section" id="retention">
+    <h2><span class="sec-num">5</span> Data Retention</h2>
+    <div class="highlight-box">
+      <p>🗓️ <strong>Active data deleted within 30 days of account deletion. Backups fully purged within 90 days.</strong></p>
+    </div>
+    <p>While your account is active, we retain your data to provide the service. The specific retention periods:</p>
+    <ul>
+      <li><strong>Messages &amp; content:</strong> Retained until you delete them or your account. Deleted content is removed from active databases within 30 days.</li>
+      <li><strong>Account data:</strong> Retained until account deletion, then purged within 30 days.</li>
+      <li><strong>Security logs (IP addresses, login history):</strong> Retained for 90 days to support abuse investigations, then deleted.</li>
+      <li><strong>Billing records:</strong> Retained for 7 years as required by law, but linked only to a transaction ID — not to your messages or content.</li>
+      <li><strong>Backup systems:</strong> Backups are rotated and any data from deleted accounts is fully purged within 90 days of deletion.</li>
+    </ul>
+  </div>
+
+  <!-- 6. THIRD PARTIES -->
+  <div class="legal-section">
+    <h2><span class="sec-num">6</span> Third Parties</h2>
+    <p>We use a small number of trusted service providers to operate Ally. They're listed below. We do not share your data with data brokers, advertising networks, or analytics platforms.</p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Provider</th>
+          <th>Purpose</th>
+          <th>What they access</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cloudflare</td>
+          <td>CDN, DDoS protection, DNS</td>
+          <td>IP addresses, request metadata (no message content)</td>
+        </tr>
+        <tr>
+          <td>Payment processor (Stripe)</td>
+          <td>Premium subscription billing</td>
+          <td>Payment card details, billing address — never your messages</td>
+        </tr>
+        <tr>
+          <td>Email provider (transactional)</td>
+          <td>Account emails, password resets, notifications</td>
+          <td>Your email address and notification content you've opted into</td>
+        </tr>
+        <tr>
+          <td>AI moderation service (optional)</td>
+          <td>Scanning for CSAM and severe policy violations in public spaces</td>
+          <td>Public channel content only — never private DMs</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Every provider we use is contractually bound to use your data only for the specific purpose above and never for their own advertising or analytics.</p>
+  </div>
+
+  <!-- 7. CHILDREN -->
+  <div class="legal-section">
+    <h2><span class="sec-num">7</span> Children's Privacy</h2>
+    <p>Ally is not directed to children under 13. We do not knowingly collect personal information from children under 13 (or the applicable minimum age in your jurisdiction).</p>
+    <p>If we become aware that we have collected data from a child under the minimum age, we will delete it promptly. If you believe we've inadvertently collected data from a child, please contact <a href="mailto:privacy@allyapp.cc" style="color:var(--vl)">privacy@allyapp.cc</a> immediately.</p>
+  </div>
+
+  <!-- 8. SECURITY -->
+  <div class="legal-section">
+    <h2><span class="sec-num">8</span> Security</h2>
+    <p>We take security seriously and implement industry-standard measures:</p>
+    <ul>
+      <li>All data is encrypted in transit using TLS 1.2+.</li>
+      <li>Databases are encrypted at rest.</li>
+      <li>End-to-end encryption is implemented for DMs using the Signal Protocol.</li>
+      <li>Passwords are hashed using bcrypt — we cannot recover your plaintext password.</li>
+      <li>We conduct regular security reviews and penetration tests.</li>
+      <li>We operate a responsible disclosure program at <a href="mailto:security@allyapp.cc" style="color:var(--vl)">security@allyapp.cc</a>.</li>
+    </ul>
+    <p>In the event of a data breach that affects your personal information, we will notify you within 72 hours via email and in-app notification.</p>
+  </div>
+
+  <!-- 9. CHANGES -->
+  <div class="legal-section">
+    <h2><span class="sec-num">9</span> Changes to This Policy</h2>
+    <p>We'll update this policy as Ally grows and laws change. When we make material changes (anything that meaningfully affects how we use your data), we'll notify you via email and in-app with at least 14 days' notice before the changes take effect.</p>
+    <p>The "Last updated" date at the top of this page always reflects the most recent version.</p>
+  </div>
+
+  <!-- 10. CONTACT -->
+  <div class="legal-section">
+    <h2><span class="sec-num">10</span> Contact &amp; Data Requests</h2>
+    <p>For all privacy questions, data requests, or concerns:</p>
+    <ul>
+      <li><strong>Privacy requests (access, deletion, export):</strong> <a href="mailto:privacy@allyapp.cc" style="color:var(--vl)">privacy@allyapp.cc</a></li>
+      <li><strong>Security vulnerabilities:</strong> <a href="mailto:security@allyapp.cc" style="color:var(--vl)">security@allyapp.cc</a></li>
+      <li><strong>General inquiries:</strong> <a href="mailto:hello@allyapp.cc" style="color:var(--vl)">hello@allyapp.cc</a></li>
+    </ul>
+    <p>We aim to respond to all privacy requests within 7 business days and complete them within 30 days.</p>
+  </div>
+
+</div>
+</div>
+
+<footer>
+<div class="foot-ctr">
+  <div class="foot-legal-links">
+    <a href="/terms">Terms of Service</a>
+    <a href="/privacy" class="current">Privacy Policy</a>
+    <a href="/aup">Acceptable Use</a>
+    <a href="/guidelines">Community Guidelines</a>
+    <a href="/dmca">DMCA / Copyright</a>
+  </div>
+  <div class="foot-bottom">
+    <a href="/" class="foot-brand-link">
+      <svg viewBox="0 0 36 36" fill="none" width="22" height="22"><rect width="36" height="36" rx="10" fill="#7C6DFA"/><path d="M18 6L28 28H22.5L18 17.5L13.5 28H8L18 6Z" fill="white" fill-opacity="0.95"/></svg>
+      Ally
+    </a>
+    <span class="foot-copy">&copy; 2026 Ally. Privacy-first &bull; Open source &bull; Zero ads</span>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>

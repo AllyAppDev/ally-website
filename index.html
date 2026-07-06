@@ -302,7 +302,7 @@ button,input{font-family:inherit}
 
 /* FOOTER */
 footer{padding:60px 0 40px;border-top:1px solid var(--b)}
-.foot-inner{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:60px}
+.foot-inner{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:36px;margin-bottom:60px}
 .foot-brand{}
 .foot-logo{display:flex;align-items:center;gap:10px;margin-bottom:12px}
 .foot-wm{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:800;color:var(--tp);letter-spacing:-.04em}
@@ -334,7 +334,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--b)}
 .cmp-grid{grid-template-columns:1fr}
 .price-grid{grid-template-columns:1fr}
 .priv-inner{grid-template-columns:1fr}
-.foot-inner{grid-template-columns:1fr 1fr;gap:36px}
+.foot-inner{grid-template-columns:1fr 1fr 1fr;gap:28px}
 }
 @media(max-width:640px){
 .nav-links{display:none}
@@ -1053,18 +1053,36 @@ Join the waitlist
 </ul>
 </div>
 <div class="foot-col">
+<h5>Careers</h5>
+<ul>
+<li><a href="mailto:careers@allyapp.cc">Open Roles</a></li>
+<li><a href="mailto:careers@allyapp.cc">Engineering</a></li>
+<li><a href="mailto:careers@allyapp.cc">Design</a></li>
+<li><a href="mailto:careers@allyapp.cc">Trust &amp; Safety</a></li>
+<li><a href="mailto:careers@allyapp.cc">Work with Us</a></li>
+</ul>
+</div>
+<div class="foot-col">
 <h5>Legal</h5>
 <ul>
-<li><a href="#">Privacy Policy</a></li>
-<li><a href="#">Terms of Service</a></li>
-<li><a href="#">Security</a></li>
+<li><a href="/privacy">Privacy Policy</a></li>
+<li><a href="/terms">Terms of Service</a></li>
+<li><a href="/aup">Acceptable Use</a></li>
+<li><a href="/guidelines">Community Guidelines</a></li>
+<li><a href="/dmca">DMCA / Copyright</a></li>
 <li><a href="mailto:hello@allyapp.cc">Contact</a></li>
 </ul>
 </div>
 </div>
 <div class="foot-bottom">
 <span class="foot-copy">&copy; 2026 Ally. Made with &#9829; for people who deserve better.</span>
-<span style="font-size:13px;color:var(--tm)">Privacy-first &bull; Open source &bull; Zero ads</span>
+<div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+<a href="/privacy" style="font-size:12px;color:var(--tm);transition:color .2s" onmouseover="this.style.color='var(--ts)'" onmouseout="this.style.color='var(--tm)'">Privacy</a>
+<a href="/terms" style="font-size:12px;color:var(--tm);transition:color .2s" onmouseover="this.style.color='var(--ts)'" onmouseout="this.style.color='var(--tm)'">Terms</a>
+<a href="/aup" style="font-size:12px;color:var(--tm);transition:color .2s" onmouseover="this.style.color='var(--ts)'" onmouseout="this.style.color='var(--tm)'">AUP</a>
+<a href="/guidelines" style="font-size:12px;color:var(--tm);transition:color .2s" onmouseover="this.style.color='var(--ts)'" onmouseout="this.style.color='var(--tm)'">Guidelines</a>
+<a href="/dmca" style="font-size:12px;color:var(--tm);transition:color .2s" onmouseover="this.style.color='var(--ts)'" onmouseout="this.style.color='var(--tm)'">DMCA</a>
+</div>
 </div>
 </div>
 </footer>
@@ -1116,10 +1134,10 @@ function switchTab(id,btn){
     btn.textContent='Joining...';
     msg.textContent='';
     msg.className='wl-msg';
-    fetch('https://waitlist.allyapp.cc/join',{
+    fetch('https://api.allyapp.cc/v1/waitlist',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({email:email,name:name||undefined,referrer:document.referrer||undefined})
+      body:JSON.stringify({email:email,name:name||undefined,referrer:document.referrer||undefined,source:'website'})
     })
     .then(function(r){return r.json();})
     .then(function(d){
