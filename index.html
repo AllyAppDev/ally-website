@@ -314,6 +314,16 @@
             color: #fafafa; margin-bottom: 16px;
         }
         .final-cta p { font-size: 17px; color: #a1a1aa; max-width: 480px; margin: 0 auto 32px; }
+        .waitlist-form { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; max-width: 480px; margin: 0 auto; }
+        .waitlist-form input[type=text], .waitlist-form input[type=email] { flex: 1; min-width: 180px; padding: 13px 18px; border-radius: 10px; border: 1.5px solid rgba(99,102,241,0.3); background: rgba(255,255,255,0.06); color: #fff; font-size: 15px; outline: none; transition: border-color 0.2s; }
+        .waitlist-form input::placeholder { color: #71717a; }
+        .waitlist-form input:focus { border-color: #6366f1; }
+        .waitlist-form button { padding: 13px 28px; border-radius: 10px; background: #6366f1; color: #fff; font-size: 15px; font-weight: 600; border: none; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: background 0.2s, transform 0.1s; white-space: nowrap; }
+        .waitlist-form button:hover { background: #4f46e5; transform: translateY(-1px); }
+        .waitlist-form button:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+        .waitlist-msg { margin-top: 16px; font-size: 15px; min-height: 22px; }
+        .waitlist-msg.success { color: #86efac; }
+        .waitlist-msg.error { color: #fca5a5; }
 
         /* ═══ FOOTER ═══ */
         footer {
@@ -372,7 +382,7 @@
             <a href="#open-source">Open Source</a>
             <a href="#pricing">Pricing</a>
             <a href="https://github.com/AllyAppDev" target="_blank" rel="noopener">GitHub</a>
-            <a href="#join" class="nav-cta" onclick="setTimeout(()=>document.getElementById('wl-email').focus(),400)">Join the waitlist →</a>
+            <a href="#join" class="nav-cta">Join the waitlist →</a>
         </div>
     </div>
 </nav>
@@ -387,7 +397,7 @@
         <h1>Communication <span>you can trust.</span></h1>
         <p>End-to-end encrypted messaging, voice channels, and community spaces — built for people, not advertisers. Open source. Privacy first. Forever free.</p>
         <div class="hero-actions">
-            <a href="#join" class="btn-primary" onclick="setTimeout(()=>document.getElementById('wl-email').focus(),400)">
+            <a href="#join" class="btn-primary">
                 Join the waitlist
                 <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10m-4-4l4 4-4 4"/></svg>
             </a>
@@ -553,7 +563,7 @@
                     <li><svg viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"/></svg> 25MB file uploads</li>
                     <li><svg viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"/></svg> Full API &amp; SDK access</li>
                 </ul>
-                <a href="#join" class="btn-secondary" onclick="setTimeout(()=>document.getElementById('wl-email').focus(),400)">Join free</a>
+                <a href="#join" class="btn-secondary">Join free</a>
             </div>
             <div class="price-card featured">
                 <div class="plan-name">Premium</div>
@@ -567,7 +577,7 @@
                     <li><svg viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"/></svg> HD voice &amp; video</li>
                     <li><svg viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"/></svg> Priority support</li>
                 </ul>
-                <a href="#join" class="btn-primary" onclick="setTimeout(()=>document.getElementById('wl-email').focus(),400)">Get Premium</a>
+                <a href="#join" class="btn-primary">Get Premium</a>
             </div>
         </div>
     </div>
@@ -611,21 +621,54 @@
     <div class="container">
         <h2>Ready for communication<br>that respects you?</h2>
         <p>Join the waitlist and be the first to experience Ally when we launch.</p>
-        <div id="waitlist-form-wrap">
-            <form id="waitlist-form" onsubmit="submitWaitlist(event)" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;max-width:480px;margin:0 auto;">
-                <input type="text" id="wl-name" placeholder="Your name (optional)" autocomplete="given-name"
-                    style="flex:1;min-width:140px;padding:14px 16px;border-radius:10px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);color:#f9fafb;font-size:15px;font-family:inherit;outline:none;"
-                    onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='rgba(255,255,255,0.12)'">
-                <input type="email" id="wl-email" placeholder="you@example.com" required autocomplete="email"
-                    style="flex:2;min-width:200px;padding:14px 16px;border-radius:10px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);color:#f9fafb;font-size:15px;font-family:inherit;outline:none;"
-                    onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='rgba(255,255,255,0.12)'">
-                <button type="submit" id="wl-btn" class="btn-primary" style="white-space:nowrap;">
-                    Join the waitlist
-                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10m-4-4l4 4-4 4"/></svg>
-                </button>
-            </form>
-            <div id="wl-msg" style="margin-top:16px;font-size:14px;color:#a1a1aa;min-height:20px;text-align:center;"></div>
-        </div>
+        <form class="waitlist-form" id="waitlist-form" novalidate>
+            <input type="text" name="name" placeholder="Your name" autocomplete="name">
+            <input type="email" name="email" placeholder="Email address" required autocomplete="email">
+            <button type="submit">
+                Join the waitlist
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10m-4-4l4 4-4 4"/></svg>
+            </button>
+        </form>
+        <div class="waitlist-msg" id="waitlist-msg"></div>
+        <script>
+        (function(){
+            var form = document.getElementById('waitlist-form');
+            var msg  = document.getElementById('waitlist-msg');
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                var email = form.email.value.trim();
+                var name  = form.name.value.trim();
+                if(!email){ msg.textContent='Please enter your email.'; msg.className='waitlist-msg error'; return; }
+                var btn = form.querySelector('button');
+                btn.disabled = true;
+                btn.textContent = 'Joining…';
+                msg.textContent = '';
+                msg.className = 'waitlist-msg';
+                fetch('https://waitlist.allyapp.cc/join', {
+                    method: 'POST',
+                    headers: {'Content-Type':'application/x-www-form-urlencoded'},
+                    body: 'email='+encodeURIComponent(email)+(name?'&name='+encodeURIComponent(name):'')
+                })
+                .then(function(r){ return r.json(); })
+                .then(function(d){
+                    if(d.ok || d.position){
+                        form.style.display='none';
+                        msg.className='waitlist-msg success';
+                        msg.textContent = d.message || "You're on the list! We'll be in touch soon.";
+                    } else {
+                        msg.className='waitlist-msg error';
+                        msg.textContent = d.error || 'Something went wrong. Please try again.';
+                        btn.disabled=false; btn.innerHTML='Join the waitlist <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10m-4-4l4 4-4 4"/></svg>';
+                    }
+                })
+                .catch(function(){
+                    msg.className='waitlist-msg error';
+                    msg.textContent='Could not connect. Please try again.';
+                    btn.disabled=false; btn.innerHTML='Join the waitlist <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10m-4-4l4 4-4 4"/></svg>';
+                });
+            });
+        })();
+        </script>
     </div>
 </section>
 
@@ -654,50 +697,6 @@
         }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     }
-</script>
-
-
-<script>
-async function submitWaitlist(e) {
-    e.preventDefault();
-    var btn = document.getElementById('wl-btn');
-    var msg = document.getElementById('wl-msg');
-    var email = document.getElementById('wl-email').value.trim();
-    var name = document.getElementById('wl-name').value.trim();
-    if (!email) return;
-    btn.disabled = true;
-    btn.textContent = 'Joining...';
-    msg.textContent = '';
-    try {
-        var res = await fetch('https://waitlist.allyapp.cc/join', {
-            method: 'POST',
-            headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({ email: email, name: name, referrer: 'landing' })
-        });
-        var data = await res.json();
-        if (data.success) {
-            document.getElementById('waitlist-form-wrap').innerHTML =
-                '<div style="text-align:center;padding:24px 0">' +
-                '<div style="font-size:36px;margin-bottom:12px;">✓</div>' +
-                '<p style="font-size:17px;font-weight:600;color:#f9fafb;margin-bottom:8px">' +
-                (data.already ? "You're already on the list!" : "You're on the list!") +
-                '</p>' +
-                (data.position ? '<p style="color:#a1a1aa;font-size:14px">You're #' + data.position + ' — we'll email you when your spot opens.</p>' :
-                 '<p style="color:#a1a1aa;font-size:14px">We'll email you when your spot opens.</p>') +
-                '</div>';
-        } else {
-            msg.style.color = '#f87171';
-            msg.textContent = data.error === 'invalid_email' ? 'Please enter a valid email address.' : 'Something went wrong — please try again.';
-            btn.disabled = false;
-            btn.innerHTML = 'Join the waitlist <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10m-4-4l4 4-4 4"/></svg>';
-        }
-    } catch(err) {
-        msg.style.color = '#f87171';
-        msg.textContent = 'Network error — please try again.';
-        btn.disabled = false;
-        btn.innerHTML = 'Join the waitlist <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10m-4-4l4 4-4 4"/></svg>';
-    }
-}
 </script>
 
 </body>
