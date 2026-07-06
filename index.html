@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ally — Chat, discover, enjoy.</title>
-<meta name="description" content="Ally is the privacy-first Discord alternative. End-to-end encrypted DMs, community spaces, zero ads. No tracking. Open source. Join the waitlist.">
+<title>Ally — Privacy-first communication & community</title>
+<meta name="description" content="Ally is a modern communication and social platform. End-to-end encrypted DMs, community spaces, zero ads. No tracking. Open source. Join the alpha.">
 <meta name="theme-color" content="#0a0a0f">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="canonical" href="https://allyapp.cc">
-<meta property="og:title" content="Ally — Chat, discover, enjoy.">
-<meta property="og:description" content="The privacy-first Discord alternative. E2EE DMs, community spaces, zero ads. Built for people, not advertisers.">
+<meta property="og:title" content="Ally — Privacy-first communication & community">
+<meta property="og:description" content="A modern platform built for real human connection. E2EE DMs, community spaces, zero ads. Built for people, not advertisers.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://allyapp.cc">
 <meta name="twitter:card" content="summary_large_image">
@@ -389,9 +389,9 @@ footer{padding:60px 0 40px;border-top:1px solid var(--b)}
 <div class="ctr">
 <div class="hero-inner">
 <div class="hero-left">
-<div class="badge"><span class="badge-dot"></span>Early Access — Open source from day one</div>
-<h1>The chat platform<br><span class="grad">built for you.</span></h1>
-<p class="hero-sub">End-to-end encrypted messaging, rich community spaces, and zero ads. Ally is the Discord alternative that actually respects you.</p>
+<div class="badge" id="stage-badge"><span class="badge-dot"></span><span id="stage-label">Currently in Alpha</span> — Open source from day one</div>
+<h1>A new kind of<br><span class="grad">social platform.</span></h1>
+<p class="hero-sub" id="hero-sub-text">Privacy-first communication and community, built for real human connection. End-to-end encrypted messaging, rich community spaces, and zero ads — ever.</p>
 <div class="hero-btns">
 <button class="btn-p" onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">
 <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
@@ -491,7 +491,7 @@ lounge
 <div class="ph-av" style="background:#f59e0b">K</div>
 <div class="ph-mb">
 <div class="ph-mn" style="color:#f59e0b">kai</div>
-<div class="ph-bub">my Discord bots work on Ally too 👀</div>
+<div class="ph-bub">my bots work on Ally too 👀</div>
 </div>
 </div>
 </div>
@@ -515,14 +515,14 @@ lounge
 <div class="ctr">
 <div class="cmp-head">
 <div class="s-eye">Why Ally?</div>
-<h2 class="s-title">Discord had its chance.</h2>
-<p class="s-desc">We built what people actually asked for.</p>
+<h2 class="s-title">Communication deserves better.</h2>
+<p class="s-desc">We built what people actually asked for — from scratch.</p>
 </div>
 <div class="cmp-grid">
 <div class="cc prob">
 <div class="cc-lbl">
 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
-The problem with Discord
+The old way
 </div>
 <div class="ci">
 <div class="ci-icon">✕</div>
@@ -541,7 +541,7 @@ The problem with Discord
 <div class="ci">
 <div class="ci-icon">✕</div>
 <div class="ci-text">
-<h4>Basic features locked behind Nitro paywalls</h4>
+<h4>Core features locked behind paywalls</h4>
 <p>Custom emoji, screen share quality, file uploads — all gated.</p>
 </div>
 </div>
@@ -641,8 +641,8 @@ How Ally is different
 <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
 </svg>
 </div>
-<h3>Discord API Compatible</h3>
-<p>Your existing bots work on Ally. We speak Discord's API language so nothing breaks.</p>
+<h3>Bot &amp; API Compatible</h3>
+<p>Your existing bots and integrations work on Ally. A familiar API so nothing breaks.</p>
 </div>
 </div>
 </div>
@@ -736,7 +736,7 @@ general
 <div class="dav" style="background:#22c55e">J</div>
 <div>
 <div class="dmhd"><span class="dn" style="color:#22c55e">jake</span><span class="dts">Today at 2:15 PM</span></div>
-<div class="dbub">moved my gaming server over from Discord, setup was 5 mins</div>
+<div class="dbub">setup my community space in 5 mins, it's so clean</div>
 </div>
 </div>
 <div class="dm">
@@ -981,9 +981,9 @@ View on GitHub
 <div class="waitlist-bg-grid"></div>
 <div class="ctr">
 <div class="waitlist-inner">
-<div class="s-eye" style="justify-content:center">Early Access</div>
-<h2>Be first. Join the waitlist.</h2>
-<p class="waitlist-sub">Early members get priority access, a founding member badge, and 3 months of Ally Pass Pro free.</p>
+<div class="s-eye" style="justify-content:center" id="wl-stage-eye">Alpha Access</div>
+<h2 id="wl-title">Join the Alpha — exclusive early access.</h2>
+<p class="waitlist-sub" id="wl-subtitle">Alpha members get priority access, a founding member badge, and 3 months of Ally Pass Pro free.</p>
 <div class="waitlist-perks">
 <div class="waitlist-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--v)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Priority access</div>
 <div class="waitlist-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--v)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Founder badge</div>
@@ -991,13 +991,14 @@ View on GitHub
 </div>
 <div id="wl-form-wrap">
 <form class="wl-form" id="wl-form" novalidate>
+<input type="hidden" name="stage" id="wl-stage" value="alpha">
 <div class="wl-row">
 <input class="wl-input" type="text" name="name" id="wl-name" placeholder="Your name" autocomplete="name">
 <input class="wl-input" type="email" name="email" id="wl-email" placeholder="Email address" required autocomplete="email">
 </div>
 <button class="btn-p" type="submit" id="wl-btn">
 <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-Join the waitlist
+<span id="wl-btn-text">Join the Alpha</span>
 </button>
 <div class="wl-msg" id="wl-msg"></div>
 </form>
@@ -1115,11 +1116,37 @@ function switchTab(id,btn){
   },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('.fade').forEach(function(el){obs.observe(el);});
 })();
+// Stage configuration — change LAUNCH_STAGE to 'alpha', 'beta', or 'release'
+var LAUNCH_STAGE = 'alpha';
+(function(){
+  var stageCfg = {
+    alpha:   { eye: 'Alpha Access',  title: 'Join the Alpha \u2014 exclusive early access.', sub: 'Alpha members get priority access, a founding member badge, and 3 months of Ally Pass Pro free.', btn: 'Join the Alpha',   badge: 'Currently in Alpha' },
+    beta:    { eye: 'Beta Access',   title: 'Join the Beta \u2014 help us shape the future.', sub: 'Beta members get early access and help build the future of communication.', btn: 'Join the Beta',    badge: 'Currently in Beta' },
+    release: { eye: 'Now Available', title: 'Join Ally \u2014 sign up now.', sub: 'Create your account and start connecting with people who matter.', btn: 'Sign Up Free',    badge: 'Now Available' },
+  };
+  var cfg = stageCfg[LAUNCH_STAGE] || stageCfg.alpha;
+  // Update stage-specific UI
+  var stageEl = document.getElementById('wl-stage');
+  var stageLbl = document.getElementById('stage-label');
+  var stageEye = document.getElementById('wl-stage-eye');
+  var wlTitle = document.getElementById('wl-title');
+  var wlSub = document.getElementById('wl-subtitle');
+  var wlBtnText = document.getElementById('wl-btn-text');
+  var heroSub = document.getElementById('hero-sub-text');
+  if(stageEl) stageEl.value = LAUNCH_STAGE;
+  if(stageLbl) stageLbl.textContent = cfg.badge;
+  if(stageEye) stageEye.textContent = cfg.eye;
+  if(wlTitle) wlTitle.textContent = cfg.title;
+  if(wlSub) wlSub.textContent = cfg.sub;
+  if(wlBtnText) wlBtnText.textContent = cfg.btn;
+})();
+
 // Waitlist form
 (function(){
   var form=document.getElementById('wl-form');
   var msg=document.getElementById('wl-msg');
   var btn=document.getElementById('wl-btn');
+  var btnText=document.getElementById('wl-btn-text');
   var wrap=document.getElementById('wl-form-wrap');
   var succ=document.getElementById('wl-success');
   var posEl=document.getElementById('wl-pos');
@@ -1129,15 +1156,16 @@ function switchTab(id,btn){
     e.preventDefault();
     var email=document.getElementById('wl-email').value.trim();
     var name=document.getElementById('wl-name').value.trim();
+    var stage=document.getElementById('wl-stage').value||LAUNCH_STAGE;
     if(!email){msg.textContent='Please enter your email address.';msg.className='wl-msg err';return;}
     btn.disabled=true;
-    btn.textContent='Joining...';
+    if(btnText) btnText.textContent='Joining...'; else btn.textContent='Joining...';
     msg.textContent='';
     msg.className='wl-msg';
     fetch('https://api.allyapp.cc/v1/waitlist',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({email:email,name:name||undefined,referrer:document.referrer||undefined,source:'website'})
+      body:JSON.stringify({email:email,name:name||undefined,stage:stage,source:'website'})
     })
     .then(function(r){return r.json();})
     .then(function(d){
@@ -1155,14 +1183,13 @@ function switchTab(id,btn){
         msg.textContent=d.error||'Something went wrong. Please try again.';
         msg.className='wl-msg err';
         btn.disabled=false;
-        btn.textContent='Join the waitlist';
+        if(btnText) btnText.textContent=(document.getElementById('wl-btn-text')||{}).dataset&&document.getElementById('wl-btn-text').textContent||'Join the waitlist';
       }
     })
     .catch(function(){
       msg.textContent='Connection error. Please try again.';
       msg.className='wl-msg err';
       btn.disabled=false;
-      btn.textContent='Join the waitlist';
     });
   });
 })();
