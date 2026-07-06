@@ -1,0 +1,46 @@
+# Ally Source-Available License (ASAL) v1.0
+
+Copyright (c) 2026 Ally / AllyAppDev. All rights reserved.
+
+## Grant of Rights
+
+Permission is granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to:
+
+1. **View and study** the source code for personal, educational, or security
+   research purposes.
+2. **Fork and contribute** via pull requests to the official repository.
+3. **Run locally** for personal, non-commercial development and testing only.
+
+## Restrictions
+
+The following are expressly prohibited without prior written permission from
+Ally:
+
+1. **No self-hosting or deployment.** You may not deploy, host, operate, or
+   make available any production or publicly accessible instance of this
+   Software or any derivative work thereof.
+2. **No commercial use.** You may not use the Software, in whole or in part,
+   to provide a service, product, or SaaS offering to any third party.
+3. **No redistribution.** You may not distribute, sublicense, sell, or
+   otherwise transfer copies of the Software or derivative works.
+
+## Why Open Source?
+
+Ally publishes its source code to:
+- Allow independent security audits and verification of privacy claims.
+- Build community trust through transparency.
+- Enable bug reports and contributions from the community.
+
+The code is public for **visibility and trust**, not to enable self-hosting
+or competing services.
+
+## Warranty Disclaimer
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
+ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM USE OF THE SOFTWARE.
+
+## Contact
+
+For licensing inquiries: legal@allyapp.cc
